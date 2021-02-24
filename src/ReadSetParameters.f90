@@ -324,6 +324,12 @@ CONTAINS
             LocalVar%BlPitch(3) = LocalVar%PitCom(3)      
         ENDIF
 
+        IF (LocalVar%iStatus == 0) THEN
+            PRINT *, "Using Extended Bladed Interface Version ", avrSWAP(1000)
+            LocalVar%BlPitch(2) = avrSWAP(33)
+            LocalVar%BlPitch(3) = avrSWAP(34)
+        ENDIF
+
     END SUBROUTINE ReadAvrSWAP
     ! -----------------------------------------------------------------------------------
     ! Check for errors before any execution

@@ -198,6 +198,12 @@ CONTAINS
         
         ! Set the command generator torque (See Appendix A of Bladed User's Guide):
         avrSWAP(47) = MAX(0.0, LocalVar%VS_LastGenTrq)  ! Demanded generator torque, prevent negatives.
+
+        if (LocalVar%Time > 100) THEN
+            avrSWAP(2601)  = -2
+        ENDIF
+
+
     END SUBROUTINE VariableSpeedControl
 !-------------------------------------------------------------------------------------------------------------------------------
     SUBROUTINE YawRateControl(avrSWAP, CntrPar, LocalVar, objInst)

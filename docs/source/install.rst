@@ -181,7 +181,7 @@ Full ROSCO Installation
 
 We recommend using the full ROSCO tool-chain. This allows for full use of the provided functions along with the developed python packages and controller code, 
 
-Please follow the following steps to install the ROSCO tool-chain. You should do step 3 *or* 4. If you simply want to install the ROSCO toolbox without the controller, do step 3. If you would like to install the ROSCO toolbox and compile the controller simultaneously, do step 4. 
+Please follow the following steps to install the ROSCO tool-chain. You should do step 2 *or* 3. If you simply want to install the ROSCO toolbox without the controller, do step 3. If you would like to install the ROSCO toolbox and compile the controller simultaneously, do step 2. 
 
 1. Create a conda environment for ROSCO
 
